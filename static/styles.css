@@ -1,0 +1,72 @@
+* { margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+
+@font-face { font-family: Poppins;
+    src: url(Poppins-Light.ttf); }
+
+body { background-color: #373636;
+    font-family: Poppins;
+    color: #f8f7f3; }
+
+.header { display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #15aaff;
+    font-size: 1.2em;
+    background-color: #f8f7f3; }
+
+.header h1 { margin-left: 25px; }
+
+.header a { margin-right: 20px;
+    text-decoration: none;
+    color: #15aaff; }
+
+.encrypt { padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    text-align: center;
+    margin: 20px 0; }
+
+.input { background-color: #373636;
+    color: #f8f7f3;
+    height: 25px;
+    width: 15%;
+    margin-bottom: 50px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #494949;
+    text-align: center;
+    transition: width 0.4s ease-in-out, border-bottom 0.4s ease-in-out; }
+
+.input:focus { width: 80%;
+    border-bottom: 2px solid #15aaff; }
+
+.input:focus::placeholder { color: transparent; }
+
+.btne { cursor: pointer;
+    background-color: #f8f7f3;
+    color: #373636;
+    height: 25px;
+    width: 60px;
+    border: none;
+    border-radius: 4px;
+    font-family: Poppins;
+    transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out; }
+
+.btne:hover{ color: #15aaff;
+    background-color: #373636; }
+
+.title1 { font-size: 1.3em;
+    color: #15aaff; }
+
+.enc { display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #494949;
+    width: 100%;
+    min-height: 35px;
+    margin: 10px 0;
+    margin-bottom: 30px; }

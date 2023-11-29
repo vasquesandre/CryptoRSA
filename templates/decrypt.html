@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/favicon.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>ProCrypt - RSA Decrypt</title>
+</head>
+<body>
+    <div class="header">
+        <h1>ProCrypt</h1>
+        <a href="/">Encrypt</a>
+    </div>
+    <div class="encrypt">
+        <form action="/decrypt" method="POST">
+            <input type="text" name="ciphertext" class="input" autocomplete="off" placeholder="Coloque aqui a frase criptografada" required>
+            <button class="btne">Decrypt</button>
+        </form>
+        <p class="title1">Frase original</p>
+        <p class="enc">{{ decrypted }}</p>
+    </div>
+</body>
+</html>
